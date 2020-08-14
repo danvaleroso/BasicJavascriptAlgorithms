@@ -8,7 +8,6 @@
 function getIndexToIns(arr, num) {
   arr.sort((a,b)=>a-b);
   console.log(arr);
-  
   for(let i = 0; i < arr.length; i++){
     if(arr[i] < num && arr[i+1] >= num ){
       return i+1;
@@ -17,7 +16,6 @@ function getIndexToIns(arr, num) {
     } else if(arr[arr.length-1] < num){
       return arr.length;
     }
-    
   }
   return 0;
 }
