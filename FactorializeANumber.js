@@ -1,8 +1,7 @@
 function factorialize(num) {
   let newNum = 1;
   for(let i = num; i > 0; i--){
-    newNum *= i;
-    
+    newNum *= i; 
   }
   return newNum;
 }
